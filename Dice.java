@@ -4,9 +4,11 @@ public class Dice{
 
 	public Dice(){
 		side = 6;
+		value = (int)(Math.random()*side)+1;
 	}
 	public Dice(int side){
 		this.side = side;
+		value = (int)(Math.random()*side)+1;
 	}
 	public int getValue(){
 		return value;

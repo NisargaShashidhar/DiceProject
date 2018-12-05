@@ -19,6 +19,12 @@ public class DiceRunner{
 		}while(snakeEyes == false);
 		System.out.println("\nIt took "+tries+" rolls for each die to get snake eyes");
 
+		DiceHolder cup = new DiceHolder();
+		for(int i = 0; i < 6; i++){
+			Dice die = new Dice((int)(Math.random()*20)+1);
+			cup.addDie(die);
+			System.out.println(cup);
+		}
 	}
 
 }
