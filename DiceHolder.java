@@ -17,4 +17,10 @@ public class DiceHolder{
 			return 1;
 	}
 
+	public void shake(){
+		for(int i = 0; i < holder.size(); i++){
+			holder.get(i).roll();
+		}
+	}
+
 }
