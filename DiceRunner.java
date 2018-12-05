@@ -25,6 +25,9 @@ public class DiceRunner{
 			cup.addDie(die);
 			System.out.println(cup);
 		}
+
+		cup.shake();
+		System.out.println(cup);
 	}
 
 }

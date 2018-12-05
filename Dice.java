@@ -20,7 +20,7 @@ public class Dice{
 		value = (int)(Math.random()*side)+1;
 	}
 	public String toString(){
-		return "Numebr of sides: "+side+", Value: "+value;
+		return "Number of sides: "+side+", Value: "+value;
 	}
 
 
