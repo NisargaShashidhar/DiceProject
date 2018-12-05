@@ -23,4 +23,12 @@ public class DiceHolder{
 		}
 	}
 
+	public String toString(){
+		String output;
+		for(int i = 0; i < holder.size(); i++){
+			output += holder.get(i).toString()+"\n";
+		}
+		return output;
+	}
+
 }
