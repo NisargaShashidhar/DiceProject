@@ -5,6 +5,7 @@ public class DiceRunner{
 		boolean snakeEyes = false;
 		int tries = 0;
 		//Test 1
+		System.out.println("Test 1:");
 		do{
 			tries++;
 			one.roll();
@@ -20,12 +21,14 @@ public class DiceRunner{
 		System.out.println("\nIt took "+tries+" rolls for each die to get snake eyes");
 
 		//Test 2
+		System.out.println("Test 2:");
 		DiceHolder cup = new DiceHolder();
 		for(int i = 0; i < 6; i++){
 			cup.addDie(new Dice((int)(Math.random()*20)+1));
 			System.out.println(cup);
 		}
 
+		System.out.println("Dice after shaking the cup:");
 		cup.shake();
 		System.out.println(cup);
 	}
